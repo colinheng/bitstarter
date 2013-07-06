@@ -5,7 +5,7 @@ var responsestring = new Buffer(27);
 
 fs.readFile(indexhtml, function (err, responsestring) {
   if (err) throw err;
-  console.log(buf(toString(responsestring));
+  console.log(buf(toString(responsestring)));
 });
 
 app.get('/', function(request, response) {
@@ -15,14 +15,5 @@ app.get('/', function(request, response) {
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
   console.log("Listening on " + port);
-});
-
-
-
-
-var responsestring = new Buffer(27);
-fs.readFile(indexhtml, function (err, responsestring)) {
-  if (err) throw err;
-  console.log(buf(toString(responsestring));
 });
 
